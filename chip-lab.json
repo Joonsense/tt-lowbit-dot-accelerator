@@ -1,0 +1,68 @@
+{
+  "design": {
+    "id": "6a45cc53-59a6-40f0-9fd6-7a438bf125e4",
+    "name": "INT4 weights x 1 bit activations, weight stationary, 8 MAC/clk · 재구성 booth_noalumacc",
+    "kind": "uart_dot",
+    "params": {
+      "acc_width": 16,
+      "act_bits": 1,
+      "architecture": "sequential",
+      "chain": true,
+      "clock_mhz": 50.0,
+      "control_style": "global",
+      "depth": 8,
+      "depths": [],
+      "divisor": 8,
+      "fault": false,
+      "fifo_style": "wide",
+      "int4": true,
+      "intermediate_policy": "wide64",
+      "io": "parallel",
+      "lanes": 4,
+      "mac_pipeline": true,
+      "mac_style": "parallel",
+      "message": "abc",
+      "n": 8,
+      "operand_order": "interleaved",
+      "overflow": "saturate",
+      "stationary": true,
+      "stream_stages": 2,
+      "sum_pipeline_levels": [],
+      "sum_structure": "legacy",
+      "width": 8
+    },
+    "code_hash": "c2c17476ecab09bfc4349272b8b5de98e3d466f8ac0b8f373e7e45ce71697bb4",
+    "reference_version": "reference-1.0"
+  },
+  "seed": 42,
+  "fit": {
+    "design_id": "6a45cc53-59a6-40f0-9fd6-7a438bf125e4",
+    "top_module": "tt_um_joonsense_pin_dot_6a45cc53",
+    "area_um2": 8296.7072,
+    "cells": 835,
+    "flops": 164,
+    "pre_slack_ss_ns": 7.5357,
+    "yosys": "Yosys 0.69+post (git sha1 143eb14f9cc55d6f8927e68523b0c9d2166ed02c, Release, AppleClang clang++ 21.0.0.21000334)",
+    "tiles": "1x1",
+    "tile_count": 1,
+    "fits": true,
+    "utilization": 0.8036382319899597,
+    "utilization_range": [
+      0.7646382319899596,
+      0.8706382319899597
+    ],
+    "boundary": true,
+    "price_eur": 70,
+    "timing_verdict": "meets",
+    "tile_budget_um2": 7723.9506226388685,
+    "price_eur_per_tile": 70,
+    "scope": "sky130_fd_sc_hd TT 1.8V 25°C 배치 전 Yosys 표준셀 면적 + Tiny Tapeout 핀 래퍼. 예측 사용률 = (1.4294×추정 면적 + 0.0846×코어 면적) ÷ 코어 면적, 오차 -3.9~+6.7%p, 상한 82.1% (레이아웃 실측 13점). boundary 면 레이아웃 실측으로 확정. 배치배선 성공·타이밍·가격 확정이 아닙니다. 실측 실패는 모두 50MHz ss 셋업 타이밍이었습니다."
+  },
+  "template": {
+    "source": "https://github.com/TinyTapeout/ttsky-verilog-template",
+    "commit": "a42e6662fab316e93b4e26399e21d41664a460b7",
+    "fetched": "2026-10-21",
+    "license": "Apache-2.0",
+    "note": "info.yaml, src/project.v, test/tb.v, test/test.py, test/Makefile, docs/info.md 는 backend/tinytapeout.py 가 생성한다."
+  }
+}

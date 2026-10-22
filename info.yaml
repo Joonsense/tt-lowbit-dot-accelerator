@@ -1,0 +1,44 @@
+# Tiny Tapeout project information (chip-lab export, design 6a45cc53-59a6-40f0-9fd6-7a438bf125e4)
+project:
+  title:        "INT4 weights x 1 bit activations, 8 MAC/clk"
+  author:       "Kai Kim"
+  discord:      ""
+  description:  "Weight-stationary INT4 x 1-bit dot product accelerator, 8 MAC/clock (chip-lab verified)"
+  language:     "Verilog"
+  clock_hz:     0
+
+  tiles: "1x1"
+
+  top_module:  "tt_um_joonsense_pin_dot_6a45cc53"
+
+  source_files:
+    - "core.v"
+    - "project.v"
+
+pinout:
+  ui[0]: "IN_DATA0"
+  ui[1]: "IN_DATA1"
+  ui[2]: "IN_DATA2"
+  ui[3]: "IN_DATA3"
+  ui[4]: "IN_DATA4"
+  ui[5]: "IN_DATA5"
+  ui[6]: "IN_DATA6"
+  ui[7]: "IN_DATA7"
+  uo[0]: "OUT_DATA0"
+  uo[1]: "OUT_DATA1"
+  uo[2]: "OUT_DATA2"
+  uo[3]: "OUT_DATA3"
+  uo[4]: "OUT_DATA4"
+  uo[5]: "OUT_DATA5"
+  uo[6]: "OUT_DATA6"
+  uo[7]: "OUT_DATA7"
+  uio[0]: "IN_VALID"
+  uio[1]: "ABORT"
+  uio[2]: "OUT_READY"
+  uio[3]: "CHAIN"
+  uio[4]: "IN_READY"
+  uio[5]: "OUT_VALID"
+  uio[6]: "LOAD"
+  uio[7]: "ERR"
+
+yaml_version: 6
