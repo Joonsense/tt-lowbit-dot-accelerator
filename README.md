@@ -20,6 +20,7 @@ Designed, formally checked, laid out and verified by an AI agent pipeline, harde
 | Timing | 50 MHz, setup slack +5.52 ns at the slow corner (ss, 100C, 1.60V) |
 | Signoff | DRC 0, LVS 0, antenna 0, Tiny Tapeout precheck passed |
 | Gate level tests | 7/7: protocol and sustained interval, host driver, long dot products, 400 vectors with 20 weight reloads under random stalls and backpressure, chained dot products of 1 to 40 vectors, abort and reset recovery, the digit classifier |
+| FPGA | builds for the iCE40UP5K Tiny Tapeout simulator board: 412 of 5,280 logic cells, 26.7 MHz max ([bitstream](https://github.com/Joonsense/tt-lowbit-dot-accelerator/releases/tag/fpga-v1), not tried on a board) |
 | Fault check | the same tests on a deliberately broken build fail |
 | Formal | k-induction proof that a result is never dropped from the output queue, whatever the host does with OUT_READY |
 | Power (estimate) | about 1.05 mW at 50 MHz, typical corner (LibreLane report) |
