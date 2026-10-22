@@ -72,7 +72,7 @@ pip install -r requirements.txt
 make        # RTL: protocol, host driver, stress, digits
 ```
 
-Tile and timing prediction for your own Tiny Tapeout project, calibrated on these layouts:
+Tile and timing prediction for your own Tiny Tapeout project, calibrated on 436 real shuttle projects:
 [tt-fit](https://github.com/Joonsense/tt-fit).
 Write up: [kaikimlabs.com](https://kaikimlabs.com/research/experiments/ai-agent-chip-design-on-free-tiny-tapeout-flow/).
 
